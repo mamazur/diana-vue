@@ -1,0 +1,133 @@
+:root {
+    --primary: #343F84;
+    --primary-variant: #000C5A;
+    --primary-light: #eff2ff;
+    --secondary: #5BC5DD;
+    --secondary-variant: #006F88;
+    --background: #f6f7ff;
+    --text: #000000;
+    --warning: #FDA445;
+    --white: #ffffff
+}
+
+/* general settings */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    margin: auto;
+    max-width: 1120px;
+    background: var(--background);
+    color: var(--text);
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    /* or 150% */
+    letter-spacing: -0.015em;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    /* or 150% */
+    letter-spacing: -0.015em;
+}
+
+.body-large {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 119%;
+    letter-spacing: -0.015em;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    letter-spacing: 0.03125rem;
+}
+
+button,
+.button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 1.25px;
+}
+
+.button__warning {
+    background: #FDA445;
+    border-radius: 6px;
+    width: 175px;
+    height: 42px;
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 80%;
+    left: calc((100% - 175px) / 2);
+    text-transform: uppercase;
+}
+
+.button__info {
+    background: var(--white);
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    width: 175px;
+    height: 42px;
+    padding: 0;
+    color: var(--primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--surface-color);
+}
+
+
+@media (max-width: 576px) {
+    body {
+        max-width: 100%;
+
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}

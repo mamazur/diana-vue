@@ -1,0 +1,51 @@
+{
+  "message": {
+    "name": "Diana Galkin",
+    "hello": "Diana Galkin - geprüfte Astrologin in Griesheim",
+    "contact": "Kontakt",
+    "detailed": "Mehr erfahren",
+    "welcome": "Liebe Interessierte!",
+    "me": "Mein Name ist Diana Galkin",
+    "me_details": "Ich bin geprüfte Astrologin. Absolventin des Astrologischen Fortbildungszentrums DAV in Heidelberg. Es ist das führende Zentrum für Astrologie in Deutschland. Ich nehme regelmäßig an deutschen astrologischen Kongressen teil."
+  },
+  "menu": {
+    "me": "Über mich",
+    "offer": "Leistungen",
+    "contact": "Beratung"
+  },
+  "astrology": {
+    "title": "Was ist der Sinn und die Hilfe der Astrologie",
+    "p1": "Was gibt uns das Wissen über die Position der Gestirne: Sonne und Mond, Planeten und Sterne?",
+    "p2": "Was bewegt Menschen? Was ist der (individuelle) Sinn des Lebens? Was unterscheidet uns, macht uns einzigartig und was verbindet uns? Wer können wir sein, wenn wir es wagen, zu sein, wer wir sind? Die Suche nach Antworten auf diese Fragen begleitete mich wie ein roter Faden durchs Leben.",
+    "p3": "Die Astrologie hat sich für mich als das beste Werkzeug erwiesen, um Antworten zu finden und weiterzugeben.",
+    "p4": "Am wichtigsten ist, dass die Astrologie hilft, sich selbst zu erkennen, die eigenen Talente und Fähigkeiten zu offenbaren, den eigenen Lebenszweck schnell und erfolgreich zu bestimmen, Glück, Fülle und Lebensfreude zu empfinden."
+  },
+  "offer": {
+    "title": "Leistungen",
+    "p_title": "Persönlichkeitsanalyse",
+    "p_details": "Persönliche astrologische Beratung anhand Ihres Geburtshoroskops. Hier besprechen wir das psychologische Porträt eines Menschen, Lebensmuster, Möglichkeiten und Arbeiten seines Lebens sowie Antworten auf Fragen, die Sie aktuell beschäftigen.",
+    "ps_title": "Partnerschaftsanalyse",
+    "ps_details": "Interpretation von Chancen und Problemen in einer Beziehung zwischen zwei Menschen. Die Beratung basiert auf Ihrem Geburtshoroskop und dem Ihres Partners. Diese Art der Beratung hilft bei der Beurteilung der Synastrie (Kompatibilität) mit Partnern und anderen.",
+    "po_title": "Berufsorientierung",
+    "po_details": "Sinnvoll ist diese Beratung nicht nur für Teenager und Jugendliche, sondern für alle, die sich beruflich etwas verändern wollen und vor der Wahl zwischen zwei Arbeitgebern stehen.",
+    "da_title": "Elektionshoroskop",
+    "da_details": "Eine Hochzeit, ein Umzug, eine Firma eröffnen, Operationen durchführen, eine Immobilie kaufen, ein Auto usw. – all dies sind wichtige Ereignisse in unserem Leben, und der Wunsch eines jeden von uns ist es, dass diese Ereignisse den bestmöglichen Verlauf nehmen und einbringen der größte Nutzen und Freude.",
+    "pr_title": "Individuelle Jahresprognose",
+    "pr_details": "Eine individuelle Prognose für das Jahr gibt eine klare Vorstellung davon, welche Ereignisse, Lebensbereiche und Beziehungen wichtig sein werden, sie zeigt die wichtigsten Trends des Jahres an und hilft Ihnen, die richtige Richtung für Ihre Bewegung im Laufe des Jahres zu wählen.",
+    "re_title": "Geburtszeitkorrektur",
+    "re_details": "Wiederherstellung der Geburtszeit nach Lebensereignisse."
+  },
+  "info": {
+    "box1": "Astrologie hilft, Ihre Bestrebungen, Ziele und Pläne unter den sich ständig ändernden Bedingungen um uns herum auszugleichen, zu optimieren und zu verwirklichen!",
+    "box2": "Wenn Sie sich nicht sicher sind, welche Art der Analyse Ihnen am besten hilft, helfe ich Ihnen gerne weiter. Und selbstverständlich behandle ich alles, was im Beratungsgespräch besprochen wird, mit Diskretion und Vertraulichkeit.",
+    "box3": "Beratungen finden in Deutschland, der Stadt Griesheim, online, telefonisch oder schriftlich statt (eine schriftliche Analyse ist ideal als Geschenkoption)"
+  },
+  "contact": {
+    "title": "Wie melde ich mich für eine Beratung an?",
+    "details": "Schicken Sie eine E-Mail an die angegebene Adresse oder rufen Sie mich direkt an. Sie können auch eine Nachricht auf Facebook oder Instagram senden.",
+    "details_big": "Erzählen Sie, worum es in der Beratung gehen soll: Was beschäftigt Sie im Moment? Im Vorgespräch legen wir auch fest, wie Sie bezahlen möchten. Aufgrund der intensiven Vorbereitung wird die Beratung im Voraus bezahlt: Sie können per PayPal oder Banküberweisung bezahlen. Nach Zahlungseingang erstelle ich Ihr Horoskop und die dazugehörigen Horoskope für den vereinbarten Termin. Eine Beratung dauert in der Regel durchschnittlich 90 Minuten. Im Beratungsgespräch besprechen wir mit Ihnen Ihre Probleme – und ggf. weitere Fragen."
+  },
+  "certificates": {
+    "title": "Meine Zertifikate"
+  }
+}
