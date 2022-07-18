@@ -123,13 +123,22 @@
         margin: auto;
     }
 
-    .container__me,
-    .container_offer {
-        flex-direction: column;
+    .container__header {
+        height: 250px;
     }
 
     .container__header>h1 {
-        top: 55%;
+        padding: 2%;
+        top: 25%;
+    }
+
+    .container__header>a>.button__warning {
+        display: none
+    }
+
+    .container__me,
+    .container_offer {
+        flex-direction: column;
     }
 
     .container__me>div,

@@ -12,8 +12,8 @@
             <br />
             <div>
               Diana Galkin<br />
-              Musterstraße 00<br />
-              00000 Griesheim <br />
+              Beliner Straße 29a<br />
+              64347 Griesheim <br />
               <br />
               Email: dianagalkin.astrolog@gmail.com <br />
               <br />
@@ -27,15 +27,27 @@
             <br />
             <div>
               Diana Galkin<br />
-              Musterstraße 00<br />
-              00000 Griesheim <br />
+              Beliner Straße 29a<br />
+              64347 Griesheim <br />
               <br />
               Email: dianagalkin.astrolog@gmail.com <br />
               <br />
+              Bilder, Grafiken, Text- oder sonstige Dateien können ganz oder
+              teilweise dem Urheberrecht Dritter unterliegen.
             </div>
             <div><b>Cookies und Tracking-Tools</b></div>
             Diese Webseite verwendet keine Cookies oder Tracking-Tools. Somit
             werden keine Daten gespeichert.
+            <br />
+            <br />
+            <div><b>Umgang mit Personenbezogene Daten</b></div>
+            Personenbezogene Daten sind Informationen, mit deren Hilfe eine
+            Person bestimmbar ist, also Angaben, die zurück zu einer Person
+            verfolgt werden können. Dazu gehören der Name, die Emailadresse oder
+            die Telefonnummer. Bei der Kontaktaufnahme zum Beispiel per E-Mail
+            werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie
+            für den Fall, dass Anschlussfragen entstehen, gespeichert. Ihre
+            personenbezogenen Daten werden nicht an Dritte weitergeleitet.
             <br />
             <br />
             <div><b>Datenspeicherung - Server Log Daten</b></div>

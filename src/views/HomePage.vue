@@ -7,7 +7,7 @@
           {{ $t("message.hello") }}
         </h1>
         >
-        <a href="./index.html#contact"
+        <a href="./#contact"
           ><button class="button__warning">
             {{ $t("message.contact") }}
           </button></a
@@ -18,6 +18,7 @@
           <h2>{{ $t("message.welcome") }}</h2>
           <div class="container__me-left-img">
             <img src="@/assets/me.jpg" />
+            <img src="@/assets/dav.png" style="width: 56%; height: 56%" />
             <div class="title">{{ $t("message.me") }}</div>
             <p>
               {{ $t("message.me_details") }}
@@ -69,34 +70,44 @@
           <OfferItem
             :title="$t('offer.p_title')"
             :details="$t('offer.p_details')"
-            link="/offer#personal-horoscope"
+            link="/offer"
           />
           <OfferItem
             :title="$t('offer.ps_title')"
             :details="$t('offer.ps_details')"
-            link="/offer#partner"
+            link="/offer"
           />
           <OfferItem
             :title="$t('offer.po_title')"
             :details="$t('offer.po_details')"
-            link="/offer#profession"
+            link="/offer"
+          />
+          <OfferItem
+            :title="$t('offer.ha_title')"
+            :details="$t('offer.ha_details')"
+            link="/offer"
           />
         </div>
         <div class="container__offer-right">
           <OfferItem
+            :title="$t('offer.ch_title')"
+            :details="$t('offer.ch_details')"
+            link="/offer"
+          />
+          <OfferItem
             :title="$t('offer.da_title')"
             :details="$t('offer.da_details')"
-            link="/offer#event-date"
+            link="/offer"
           />
           <OfferItem
             :title="$t('offer.pr_title')"
             :details="$t('offer.pr_details')"
-            link="/offer#personal-outlook"
+            link="/offer"
           />
           <OfferItem
             :title="$t('offer.re_title')"
             :details="$t('offer.re_details')"
-            link="/offer#birth"
+            link="/offer"
           />
         </div>
       </div>
