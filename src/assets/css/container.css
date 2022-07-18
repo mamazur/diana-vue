@@ -161,7 +161,9 @@
         height: auto
     }
 
-    .container__contact {
+    .container__contact,
+    .container__certificates {
         margin: 2rem;
     }
+
 }

@@ -1,6 +1,6 @@
 <template>
   <nav class="label-large">
-    <a href="./"
+    <a href="./" class="hide-on-mobile"
       ><img
         src="@/assets/style/brightness.svg"
         style="margin-bottom: -5px; margin-right: 5px; height: 24px"
@@ -8,6 +8,7 @@
     >
 
     <span id="topNav" class="nav-closed">
+      <a href="#home" class="hide-on-desktop"> {{ $t("menu.home") }}</a>
       <a href="#me"> {{ $t("menu.me") }}</a>
       <a href="#offer"> {{ $t("menu.offer") }}</a>
       <a href="#contact">{{ $t("menu.contact") }}</a>
@@ -33,7 +34,11 @@
 import LocaleChanger from "@/components/shared/LocaleChanger.vue";
 export default {
   name: "HeaderBar",
-  data: () => ({}),
+  data() {
+    return {
+      publicPath: process.env.BASE_URL,
+    };
+  },
   props: {},
   components: { LocaleChanger },
   methods: {
@@ -43,13 +48,28 @@ export default {
       if (topNav.classList.contains("nav-closed")) {
         topNav.classList.remove("nav-closed");
         topNav.classList.add("nav-open");
-        imgReplace.src = "../../../public/style/arrow-up.svg";
+        imgReplace.src = `${this.publicPath}style/close.svg`;
       } else if (topNav.classList.contains("nav-open")) {
         topNav.classList.remove("nav-open");
         topNav.classList.add("nav-closed");
-        imgReplace.src = "../../../public/style/menu.svg";
+        imgReplace.src = `${this.publicPath}style/menu.svg`;
       }
     },
   },
 };
 </script>
+
+<style scoped>
+.hide-on-desktop {
+  color: var(--background);
+}
+
+@media (max-width: 576px) {
+  .hide-on-desktop {
+    color: var(--primary);
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+}
+</style>
