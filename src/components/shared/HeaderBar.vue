@@ -9,9 +9,18 @@
 
     <span id="topNav" class="nav-closed">
       <a href="#home" class="hide-on-desktop"> {{ $t("menu.home") }}</a>
-      <a href="#me"> {{ $t("menu.me") }}</a>
-      <a href="#offer"> {{ $t("menu.offer") }}</a>
-      <a href="#contact">{{ $t("menu.contact") }}</a>
+      <router-link to="/" class="hide-on-desktop">
+        {{ $t("menu.home") }}
+      </router-link>
+      <router-link to="/#me">
+        {{ $t("menu.me") }}
+      </router-link>
+      <router-link to="/#offer">
+        {{ $t("menu.offer") }}
+      </router-link>
+      <router-link to="/#contact">
+        {{ $t("menu.contact") }}
+      </router-link>
       <LocaleChanger />
     </span>
 

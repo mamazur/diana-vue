@@ -10,7 +10,7 @@
           {{ $t("info.box3") }}
         </div>
       </div>
-      <div class="container_offer_det">
+      <div class="container_offer_det" id="p_title">
         <div class="container__offer-it">
           <h2>{{ $t("offer_more.p_title") }}</h2>
           <p>
@@ -23,7 +23,7 @@
           <p>{{ $t("offer_more.time") }}</p>
         </div>
       </div>
-      <div class="container_offer_det">
+      <div class="container_offer_det" id="ch_title">
         <div class="container__offer-it">
           <h2>{{ $t("offer_more.ch_title") }}</h2>
           <p>
@@ -36,7 +36,7 @@
           <p>{{ $t("offer_more.time") }}</p>
         </div>
       </div>
-      <div class="container_offer_det">
+      <div class="container_offer_det" id="da_title">
         <div class="container__offer-it">
           <h2>{{ $t("offer_more.da_title") }}</h2>
 
@@ -46,7 +46,7 @@
           <p>{{ $t("offer_more.time") }}</p>
         </div>
       </div>
-      <div class="container_offer_det">
+      <div class="container_offer_det" id="ps_title">
         <div class="container__offer-it">
           <h2>{{ $t("offer_more.ps_title") }}</h2>
 
@@ -93,7 +93,7 @@
         </div>
       </div>
 
-      <div class="container_offer_det">
+      <div class="container_offer_det" id="po_title">
         <div class="container__offer-it">
           <h2>{{ $t("offer_more.po_title") }}</h2>
           <p>
@@ -102,7 +102,7 @@
           <p>{{ $t("offer_more.time") }}</p>
         </div>
       </div>
-      <div class="container_offer_det">
+      <div class="container_offer_det" id="re_title">
         <div class="container__offer-it">
           <h2>{{ $t("offer_more.re_title") }}</h2>
           <p>
@@ -112,7 +112,7 @@
           <p>{{ $t("offer_more.time") }}</p>
         </div>
       </div>
-      <div class="container_offer_det">
+      <div class="container_offer_det" id="ha_title">
         <div class="container__offer-it">
           <h2>{{ $t("offer_more.ha_title") }}</h2>
           <p>

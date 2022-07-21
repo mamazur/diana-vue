@@ -70,34 +70,34 @@
           <OfferItem
             :title="$t('offer.p_title')"
             :details="$t('offer.p_details')"
-            link="/offer"
+            link="/offer#p_title"
           />
           <OfferItem
             :title="$t('offer.ps_title')"
             :details="$t('offer.ps_details')"
-            link="/offer"
+            link="/offer#ps_title"
           />
           <OfferItem
             :title="$t('offer.po_title')"
             :details="$t('offer.po_details')"
-            link="/offer"
+            link="/offer#po_title"
           />
           <OfferItem
             :title="$t('offer.ha_title')"
             :details="$t('offer.ha_details')"
-            link="/offer"
+            link="/offer#ha_title"
           />
         </div>
         <div class="container__offer-right">
           <OfferItem
             :title="$t('offer.ch_title')"
             :details="$t('offer.ch_details')"
-            link="/offer"
+            link="/offer#ch_title"
           />
           <OfferItem
             :title="$t('offer.da_title')"
             :details="$t('offer.da_details')"
-            link="/offer"
+            link="/offer#da_title"
           />
           <OfferItem
             :title="$t('offer.pr_title')"
