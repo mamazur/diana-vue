@@ -33,8 +33,12 @@
               Email: dianagalkin.astrolog@gmail.com <br />
               <br />
               Bilder, Grafiken, Text- oder sonstige Dateien können ganz oder
-              teilweise dem Urheberrecht Dritter unterliegen.
+              teilweise dem Urheberrecht Dritter unterliegen. <br />
+              Die genutzten Bilder sind von der Platform unsplash und können
+              laut Lizenzbedingungen unter https://unsplash.com/license genutzt
+              werden.
             </div>
+            <br />
             <div><b>Cookies und Tracking-Tools</b></div>
             Diese Webseite verwendet keine Cookies oder Tracking-Tools. Somit
             werden keine Daten gespeichert.
