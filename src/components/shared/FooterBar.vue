@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="footer__left">
-      <a href="./index.html"
+      <a href="/"
         ><img
           src="@/assets/style/brightness.svg"
           style="margin-bottom: -5px; margin-right: 5px; height: 24px"

@@ -119,7 +119,7 @@
             {{ $t("offer_more.ha_details") }}
           </p>
 
-          <p>{{ $t("offer_more.time") }}</p>
+          <p>{{ $t("offer_more.time3") }}</p>
         </div>
       </div>
 

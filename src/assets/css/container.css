@@ -62,8 +62,11 @@
     height: 175px;
 }
 
-.container__offer-item {
+.container__offer-item,
+.empty-element {
     height: 300px;
+    overflow: hidden;
+
 }
 
 .container__offer-item>p {
@@ -117,10 +120,24 @@
     padding: 2rem;
 }
 
+@media only screen and (max-width: 968px) {
+
+    .container__offer-item,
+    .empty-element {
+        height: 420px;
+        overflow: hidden;
+
+    }
+}
+
 @media (max-width: 576px) {
     .container {
         width: calc(100%);
         margin: auto;
+    }
+
+    .empty-element {
+        height: 0;
     }
 
     .container__header {

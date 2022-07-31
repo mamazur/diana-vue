@@ -83,6 +83,11 @@
             link="/offer#po_title"
           />
           <OfferItem
+            :title="$t('offer.prs_title')"
+            :details="$t('offer.prs_details')"
+            link="/offer#prs_title"
+          />
+          <OfferItem
             :title="$t('offer.ha_title')"
             :details="$t('offer.ha_details')"
             link="/offer#ha_title"
@@ -109,6 +114,7 @@
             :details="$t('offer.re_details')"
             link="/offer"
           />
+          <div class="empty-element"></div>
         </div>
       </div>
       <div class="container__info--blue">
