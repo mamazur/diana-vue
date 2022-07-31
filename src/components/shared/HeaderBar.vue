@@ -8,7 +8,6 @@
     >
 
     <span id="topNav" class="nav-closed">
-      <a href="#home" class="hide-on-desktop"> {{ $t("menu.home") }}</a>
       <router-link to="/" class="hide-on-desktop">
         {{ $t("menu.home") }}
       </router-link>
