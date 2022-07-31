@@ -86,11 +86,11 @@
           <p>
             {{ $t("offer_more.prs_1") }}
           </p>
-          <div class="title">{{ $t("offer_more.title") }}</div>
+          <div class="title">{{ $t("offer_more.prs_title_2") }}</div>
           <p>
             {{ $t("offer_more.prs_2") }}
           </p>
-          <p>{{ $t("offer_more.time2") }}</p>
+          <p>{{ $t("offer_more.time") }}</p>
         </div>
       </div>
 
@@ -108,6 +108,9 @@
           <h2>{{ $t("offer_more.re_title") }}</h2>
           <p>
             {{ $t("offer_more.re_details") }}
+          </p>
+          <p>
+            {{ $t("offer_more.re_details2") }}
           </p>
 
           <p>{{ $t("offer_more.time") }}</p>
