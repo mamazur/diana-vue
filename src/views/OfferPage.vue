@@ -77,6 +77,7 @@
           <p>
             {{ $t("offer_more.pr_2") }}
           </p>
+          <p>{{ $t("offer_more.time2") }}</p>
         </div>
       </div>
       <div class="container_offer_det">
