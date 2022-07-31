@@ -78,14 +78,14 @@
             link="/offer#ps_title"
           />
           <OfferItem
-            :title="$t('offer.po_title')"
-            :details="$t('offer.po_details')"
-            link="/offer#po_title"
-          />
-          <OfferItem
             :title="$t('offer.prs_title')"
             :details="$t('offer.prs_details')"
             link="/offer#prs_title"
+          />
+          <OfferItem
+            :title="$t('offer.po_title')"
+            :details="$t('offer.po_details')"
+            link="/offer#po_title"
           />
           <OfferItem
             :title="$t('offer.ha_title')"
