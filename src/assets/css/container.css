@@ -51,8 +51,6 @@
     background-color: var(--primary-light);
 }
 
-
-
 .container_offer>div {
     margin-bottom: 0;
 }
@@ -164,6 +162,10 @@
         margin: 2rem;
     }
 
+    .container__offer-left {
+        margin-bottom: 0 !important;
+    }
+
     .container__info--lila>.body-large,
     .container__info--blue>.body-large {
         padding: 2.5rem;
@@ -182,5 +184,6 @@
     .container__certificates {
         margin: 2rem;
     }
+
 
 }
