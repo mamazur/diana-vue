@@ -57,6 +57,18 @@
             src="@/assets/cert1.jpg"
             style="height: 400px; border-radius: 5px; margin: 1rem"
           />
+          <img
+            src="@/assets/cert4.jpg"
+            style="height: 400px; border-radius: 5px; margin: 1rem"
+          />
+          <img
+            src="@/assets/cert5.jpg"
+            style="height: 400px; border-radius: 5px; margin: 1rem"
+          />
+          <img
+            src="@/assets/cert6.jpg"
+            style="height: 400px; border-radius: 5px; margin: 1rem"
+          />
         </div>
       </div>
       <div class="container__info--lila">
