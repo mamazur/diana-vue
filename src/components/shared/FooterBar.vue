@@ -5,7 +5,7 @@
         ><img
           src="@/assets/style/brightness.svg"
           style="margin-bottom: -5px; margin-right: 5px; height: 24px"
-        />{{ $t("message.name") }} - 2023</a
+        />{{ $t("message.name") }} - 2024</a
       >
     </div>
     <div class="footer__right">
