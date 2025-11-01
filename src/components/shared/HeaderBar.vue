@@ -6,7 +6,8 @@
           <img
             src="@/assets/images/brightness.svg"
             style="margin-bottom: -5px; margin-right: 5px; height: 24px"
-          />{{ $t('message.name') }}
+            alt="Dekoretives Element im Header"
+          />{{ $t("message.name") }}
         </router-link>
       </h1>
       <button class="menu-toggle" @click="isOpen = !isOpen">☰</button>
@@ -14,13 +15,13 @@
 
     <ul :class="{ open: isOpen }" class="menu-links">
       <router-link to="/">
-        {{ $t('menu.me') }}
+        {{ $t("menu.me") }}
       </router-link>
       <router-link to="/offer">
-        {{ $t('menu.offer') }}
+        {{ $t("menu.offer") }}
       </router-link>
       <router-link to="/#contact">
-        {{ $t('menu.contact') }}
+        {{ $t("menu.contact") }}
       </router-link>
       <locale-changer />
     </ul>
@@ -28,9 +29,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import LocaleChanger from './LocaleChanger.vue'
-const isOpen = ref(false)
+import { ref } from "vue";
+import LocaleChanger from "./LocaleChanger.vue";
+const isOpen = ref(false);
 </script>
 
 <style scoped>
@@ -43,6 +44,8 @@ const isOpen = ref(false)
   justify-content: space-between;
   position: sticky;
   align-items: center;
+  top: 0;
+  z-index: 9999;
 }
 
 .menu-header {
@@ -91,6 +94,7 @@ const isOpen = ref(false)
   }
 
   .menu-links {
+    width: 100%;
     display: none;
     flex-direction: column;
     margin-top: 0.5rem;

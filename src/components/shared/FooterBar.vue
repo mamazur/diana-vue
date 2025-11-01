@@ -5,6 +5,7 @@
         ><img
           src="@/assets/images/brightness.svg"
           style="margin-bottom: -5px; margin-right: 5px; height: 24px"
+          alt="Dekoratives Element im Footer"
         />{{ $t('message.name') }} - {{ new Date().getFullYear() }}</a
       >
     </div>
