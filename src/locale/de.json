@@ -1,7 +1,7 @@
 {
   "message": {
     "name": "Diana Galkin",
-    "hello": "Diana Galkin - geprüfte Astrologin in Griesheim",
+    "hello": "Diana Galkin - geprüfte Astrologin in Nauheim",
     "contact": "Kontakt",
     "detailed": "Mehr erfahren",
     "welcome": "Liebe Interessierte!",
@@ -16,10 +16,12 @@
   },
   "astrology": {
     "title": "Was ist der Sinn und die Hilfe der Astrologie",
-    "p1": "Was gibt uns das Wissen über die Position der Gestirne: der Sonne, des Mondes, der Planeten und der Sterne?",
-    "p2": "Was bewegt Menschen? Was ist der Sinn des Lebens? Was  macht uns einzigartig und was verbindet uns? Die Suche nach Antworten auf diese Fragen begleitet mich durchs Leben.",
-    "p3": "Die Astrologie hat sich für mich als das beste Werkzeug erwiesen, um Antworten zu finden und weiterzugeben.",
-    "p4": "Am wichtigsten ist, dass die Astrologie hilft, sich selbst zu erkennen, die eigenen Talente und Fähigkeiten zu offenbaren, den eigenen Lebenszweck schnell und erfolgreich zu bestimmen, Glück, Fülle und Lebensfreude zu empfinden."
+    "paragraphs": [
+      "Was gibt uns das Wissen über die Position der Gestirne: der Sonne, des Mondes, der Planeten und der Sterne?",
+      "Was bewegt Menschen? Was ist der Sinn des Lebens? Was  macht uns einzigartig und was verbindet uns? Die Suche nach Antworten auf diese Fragen begleitet mich durchs Leben.",
+      "Die Astrologie hat sich für mich als das beste Werkzeug erwiesen, um Antworten zu finden und weiterzugeben.",
+      "Am wichtigsten ist, dass die Astrologie hilft, sich selbst zu erkennen, die eigenen Talente und Fähigkeiten zu offenbaren, den eigenen Lebenszweck schnell und erfolgreich zu bestimmen, Glück, Fülle und Lebensfreude zu empfinden."
+    ]
   },
   "offer": {
     "title": "Angebotene Leistungen. Detallierte Auflistung",

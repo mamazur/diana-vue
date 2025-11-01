@@ -1,17 +1,14 @@
+<script setup lang="ts">
+import FooterBar from '@/components/shared/FooterBar.vue'
+import HeaderBar from '@/components/shared/HeaderBar.vue'
+</script>
 <template>
   <div class="app-wrapper">
+    <header-bar />
     <router-view />
-    <FooterBar />
+    <footer-bar />
   </div>
 </template>
-
-<script>
-import FooterBar from "@/components/shared/FooterBar.vue";
-export default {
-  name: "App",
-  components: { FooterBar },
-};
-</script>
 
 <style>
 #app {

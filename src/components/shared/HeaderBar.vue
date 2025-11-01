@@ -1,83 +1,103 @@
 <template>
-  <nav class="label-large">
-    <a href="./" class="hide-on-mobile"
-      ><img
-        src="@/assets/style/brightness.svg"
-        style="margin-bottom: -5px; margin-right: 5px; height: 24px"
-      />{{ $t("message.name") }}</a
-    >
+  <nav class="menu">
+    <div class="menu-header">
+      <h1 class="logo">
+        <router-link to="/">
+          <img
+            src="@/assets/images/brightness.svg"
+            style="margin-bottom: -5px; margin-right: 5px; height: 24px"
+          />{{ $t('message.name') }}
+        </router-link>
+      </h1>
+      <button class="menu-toggle" @click="isOpen = !isOpen">☰</button>
+    </div>
 
-    <span id="topNav" class="nav-closed">
-      <router-link to="/" class="hide-on-desktop">
-        {{ $t("menu.home") }}
+    <ul :class="{ open: isOpen }" class="menu-links">
+      <router-link to="/">
+        {{ $t('menu.me') }}
       </router-link>
-      <router-link to="/#me">
-        {{ $t("menu.me") }}
-      </router-link>
-      <router-link to="/#offer">
-        {{ $t("menu.offer") }}
+      <router-link to="/offer">
+        {{ $t('menu.offer') }}
       </router-link>
       <router-link to="/#contact">
-        {{ $t("menu.contact") }}
+        {{ $t('menu.contact') }}
       </router-link>
-      <LocaleChanger />
-    </span>
-
-    <a
-      href="javascript:void(0);"
-      class="mobile-menu-icon"
-      @click="toggleMobileNav()"
-    >
-      <span id="topNavMobileToggle" class="material-icons"
-        ><img id="menuImg" src="@/assets/style/menu.svg"
-      /></span>
-    </a>
+      <locale-changer />
+    </ul>
   </nav>
 </template>
 
-<style>
-</style>
-
-<script>
-import LocaleChanger from "@/components/shared/LocaleChanger.vue";
-export default {
-  name: "HeaderBar",
-  data() {
-    return {
-      publicPath: process.env.BASE_URL,
-    };
-  },
-  props: {},
-  components: { LocaleChanger },
-  methods: {
-    toggleMobileNav() {
-      let topNav = document.getElementById("topNav");
-      let imgReplace = document.getElementById("menuImg");
-      if (topNav.classList.contains("nav-closed")) {
-        topNav.classList.remove("nav-closed");
-        topNav.classList.add("nav-open");
-        imgReplace.src = `${this.publicPath}style/close.svg`;
-      } else if (topNav.classList.contains("nav-open")) {
-        topNav.classList.remove("nav-open");
-        topNav.classList.add("nav-closed");
-        imgReplace.src = `${this.publicPath}style/menu.svg`;
-      }
-    },
-  },
-};
+<script setup lang="ts">
+import { ref } from 'vue'
+import LocaleChanger from './LocaleChanger.vue'
+const isOpen = ref(false)
 </script>
 
 <style scoped>
-.hide-on-desktop {
-  color: var(--background);
+.menu {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  align-items: center;
 }
 
-@media (max-width: 576px) {
-  .hide-on-desktop {
-    color: var(--primary);
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menu links */
+.menu-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
   }
-  .hide-on-mobile {
+  .menu-header {
+    width: 100%;
+  }
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-links {
     display: none;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+
+  .menu-links.open {
+    display: flex;
   }
 }
 </style>
