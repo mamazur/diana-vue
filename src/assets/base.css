@@ -22,13 +22,15 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  margin: auto;
-  max-width: 1120px;
   background: var(--background);
   color: var(--text);
   height: 100%;
 }
 
+main {
+    max-width: 1120px;
+      margin: auto;
+}
 h1 {
   font-family: 'Roboto';
   font-style: normal;
@@ -111,8 +113,7 @@ a {
   text-decoration: none;
   color: var(--surface-color);
 }
-
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   body {
     max-width: 100%;
   }

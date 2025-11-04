@@ -45,119 +45,121 @@ const { tm } = useI18n();
 const paragraphs = tm("astrology.paragraphs") as string[];
 </script>
 <template>
-  <div class="container">
-    <div class="container__item header">
-      <h1>
-        {{ $t("message.hello") }}
-      </h1>
-      >
-      <a href="./#contact"
-        ><button class="button__warning">
-          {{ $t("message.contact") }}
-        </button></a
-      >
-    </div>
-    <div class="container__item">
-      <div class="container__offer grid">
-        <div class="container__me">
-          <h2>{{ $t("message.welcome") }}</h2>
-          <aside>
-            <img
-              src="@/assets/images/me.jpg"
-              class="me"
-              alt="Photo Diana Galkin"
-            />
-            <img src="@/assets/images/dav.png" class="dav" alt="DAV Logo" />
-          </aside>
-          <div class="title">{{ $t("message.me") }}</div>
-          <p>
-            {{ $t("message.me_details") }}
-          </p>
-        </div>
-        <div class="container__me">
-          <div class="title">{{ $t("astrology.title") }}</div>
-          <p v-for="(line, i) in paragraphs" :key="i">
-            {{ line }}
-          </p>
+  <main>
+    <div class="container">
+      <div class="container__item header">
+        <h1>
+          {{ $t("message.hello") }}
+        </h1>
+        >
+        <a href="./#contact"
+          ><button class="button__warning">
+            {{ $t("message.contact") }}
+          </button></a
+        >
+      </div>
+      <div class="container__item">
+        <div class="container__offer grid">
+          <div class="container__me">
+            <h2>{{ $t("message.welcome") }}</h2>
+            <aside>
+              <img
+                src="@/assets/images/me.jpg"
+                class="me"
+                alt="Photo Diana Galkin"
+              />
+              <img src="@/assets/images/dav.png" class="dav" alt="DAV Logo" />
+            </aside>
+            <div class="title">{{ $t("message.me") }}</div>
+            <p>
+              {{ $t("message.me_details") }}
+            </p>
+          </div>
+          <div class="container__me">
+            <div class="title">{{ $t("astrology.title") }}</div>
+            <p v-for="(line, i) in paragraphs" :key="i">
+              {{ line }}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container__item">
-      <h2>{{ $t("certificates.title") }}</h2>
-      <img
-        v-for="(cert, i) in certificates"
-        :key="i"
-        :src="cert.src"
-        :alt="cert.alt"
-        :style="certStyle"
-      />
-    </div>
-    <div class="container__item info--lila">
-      <div class="body-large">
-        {{ $t("info.box1") }}
-      </div>
-    </div>
-    <div class="container__item">
-      <h2>{{ $t("offer.title") }}</h2>
-
-      <div class="container__offer grid">
-        <OfferItem
-          v-for="item in offerItems"
-          :key="item.titleKey"
-          :title="$t(`offer.${item.titleKey}`)"
-          :details="$t(`offer.${item.detailsKey}`)"
-          :link="item.link"
+      <div class="container__item">
+        <h2>{{ $t("certificates.title") }}</h2>
+        <img
+          v-for="(cert, i) in certificates"
+          :key="i"
+          :src="cert.src"
+          :alt="cert.alt"
+          :style="certStyle"
         />
       </div>
-    </div>
-    <div class="container__item info--blue">
-      <div class="body-large">
-        {{ $t("info.box2") }}
+      <div class="container__item info--lila">
+        <div class="body-large">
+          {{ $t("info.box1") }}
+        </div>
+      </div>
+      <div class="container__item">
+        <h2>{{ $t("offer.title") }}</h2>
+
+        <div class="container__offer grid">
+          <OfferItem
+            v-for="item in offerItems"
+            :key="item.titleKey"
+            :title="$t(`offer.${item.titleKey}`)"
+            :details="$t(`offer.${item.detailsKey}`)"
+            :link="item.link"
+          />
+        </div>
+      </div>
+      <div class="container__item info--blue">
+        <div class="body-large">
+          {{ $t("info.box2") }}
+        </div>
+      </div>
+      <div class="container__item" id="contact">
+        <h2 class="center">{{ $t("contact.title") }}</h2>
+        <div class="body-large center">
+          {{ $t("contact.details") }}
+        </div>
+        <div class="container__contact-img center">
+          <a
+            href="https://www.facebook.com/Astrologin-Diana-Galkin-105996178601378"
+            target="_blank"
+            ><img
+              src="@/assets/images/facebook.svg"
+              alt="Facebook Icon"
+              style="margin-bottom: -5px; margin-right: 5px; height: 24px"
+          /></a>
+          <a href="https://www.instagram.com/dianagalkin_astro/" target="_blank"
+            ><img
+              src="@/assets/images/instagram.svg"
+              alt="Instagram Icon"
+              style="margin-bottom: -5px; margin-right: 5px; height: 24px"
+          /></a>
+          <a href="mailto: dianagalkin.astrolog@gmail.com" target="_blank"
+            ><img
+              src="@/assets/images/email.svg"
+              alt="Email Icon"
+              style="margin-bottom: -5px; margin-right: 5px; height: 24px"
+          /></a>
+          <a href="tel: +491570882277" target="_blank"
+            ><img
+              src="@/assets/images/phone.svg"
+              alt="Phone Icon"
+              style="margin-bottom: -5px; margin-right: 5px; height: 24px"
+          /></a>
+        </div>
+        <p>
+          {{ $t("contact.details_big") }}
+        </p>
+      </div>
+      <div class="container__item info--lila">
+        <div class="body-large">
+          {{ $t("info.box3") }}
+        </div>
       </div>
     </div>
-    <div class="container__item" id="contact">
-      <h2 class="center">{{ $t("contact.title") }}</h2>
-      <div class="body-large center">
-        {{ $t("contact.details") }}
-      </div>
-      <div class="container__contact-img center">
-        <a
-          href="https://www.facebook.com/Astrologin-Diana-Galkin-105996178601378"
-          target="_blank"
-          ><img
-            src="@/assets/images/facebook.svg"
-            alt="Facebook Icon"
-            style="margin-bottom: -5px; margin-right: 5px; height: 24px"
-        /></a>
-        <a href="https://www.instagram.com/dianagalkin_astro/" target="_blank"
-          ><img
-            src="@/assets/images/instagram.svg"
-            alt="Instagram Icon"
-            style="margin-bottom: -5px; margin-right: 5px; height: 24px"
-        /></a>
-        <a href="mailto: dianagalkin.astrolog@gmail.com" target="_blank"
-          ><img
-            src="@/assets/images/email.svg"
-            alt="Email Icon"
-            style="margin-bottom: -5px; margin-right: 5px; height: 24px"
-        /></a>
-        <a href="tel: +491570882277" target="_blank"
-          ><img
-            src="@/assets/images/phone.svg"
-            alt="Phone Icon"
-            style="margin-bottom: -5px; margin-right: 5px; height: 24px"
-        /></a>
-      </div>
-      <p>
-        {{ $t("contact.details_big") }}
-      </p>
-    </div>
-    <div class="container__item info--lila">
-      <div class="body-large">
-        {{ $t("info.box3") }}
-      </div>
-    </div>
-  </div>
+  </main>
 </template>
 
 <style scoped>
@@ -196,7 +198,6 @@ const paragraphs = tm("astrology.paragraphs") as string[];
       height: 175px;
       width: 175px;
     }
- 
   }
 
   .info--lila {
@@ -222,7 +223,7 @@ const paragraphs = tm("astrology.paragraphs") as string[];
   }
 }
 
-@media (max-width: 676px) {
+@media (max-width: 768px) {
   .container {
     .header {
       min-height: 220px;

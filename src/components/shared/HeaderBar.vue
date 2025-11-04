@@ -67,7 +67,6 @@ const isOpen = ref(false);
   display: none;
 }
 
-/* Menu links */
 .menu-links {
   display: flex;
   gap: 1rem;
@@ -81,7 +80,6 @@ const isOpen = ref(false);
   color: #333;
 }
 
-/* --- Mobile --- */
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
