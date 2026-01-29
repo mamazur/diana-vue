@@ -4,7 +4,8 @@ import cert2 from "@/assets/images/cert2.jpg";
 import cert3 from "@/assets/images/cert3.jpg";
 import cert4 from "@/assets/images/cert4.jpg";
 import cert5 from "@/assets/images/cert5.jpg";
-import cert6 from "@/assets/images/cert6.jpg";
+import cert7 from "@/assets/images/cert7.jpg";
+import cert8 from "@/assets/images/cert8.jpg";
 import OfferItem from "@/components/OfferItem.vue";
 import type { CertificateImage, OfferItemData } from "@/types";
 import { useI18n } from "vue-i18n";
@@ -26,12 +27,13 @@ const offerItems: OfferItemData[] = [
 ];
 
 const certificates: CertificateImage[] = [
+  { src: cert7, alt: "Certificate 7" },
   { src: cert2, alt: "Certificate 2" },
+  { src: cert8, alt: "Certificate 8" },
   { src: cert3, alt: "Certificate 3" },
   { src: cert1, alt: "Certificate 1" },
   { src: cert4, alt: "Certificate 4" },
   { src: cert5, alt: "Certificate 5" },
-  { src: cert6, alt: "Certificate 6" },
 ];
 
 const certStyle = {
@@ -41,8 +43,6 @@ const certStyle = {
 };
 
 const { tm } = useI18n();
-
-const paragraphs = tm("astrology.paragraphs") as string[];
 </script>
 <template>
   <main>
@@ -77,7 +77,19 @@ const paragraphs = tm("astrology.paragraphs") as string[];
           </div>
           <div class="container__me">
             <div class="title">{{ $t("astrology.title") }}</div>
-            <p v-for="(line, i) in paragraphs" :key="i">
+            <p v-for="(line, i) in $tm('astrology.paragraphs')" :key="i">
+              {{ line }}
+            </p>
+          </div>
+          <div class="container__me">
+            <div class="title">{{ $t("metaphysics.title") }}</div>
+            <p v-for="(line, i) in $tm('metaphysics.paragraphs')" :key="i">
+              {{ line }}
+            </p>
+          </div>
+          <div class="container__me">
+            <div class="title">{{ $t("metaphysics2.title") }}</div>
+            <p v-for="(line, i) in $tm('metaphysics2.paragraphs')" :key="i">
               {{ line }}
             </p>
           </div>
@@ -148,6 +160,12 @@ const paragraphs = tm("astrology.paragraphs") as string[];
               alt="Phone Icon"
               style="margin-bottom: -5px; margin-right: 5px; height: 24px"
           /></a>
+          <a href="https://t.me/+cLHWQG8Dn3Y5OTMy" target="_blank"
+            ><img
+              src="@/assets/images/telegram.svg"
+              alt="Telegram Icon"
+              style="margin-bottom: -5px; margin-right: 5px; height: 24px"
+          /></a>
         </div>
         <p>
           {{ $t("contact.details_big") }}
@@ -183,7 +201,7 @@ const paragraphs = tm("astrology.paragraphs") as string[];
   .container__offer.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    gap: 2rem;
     > * {
       display: flex;
       flex-direction: column;
@@ -223,10 +241,13 @@ const paragraphs = tm("astrology.paragraphs") as string[];
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .container {
     .header {
       min-height: 220px;
+    }
+    .container__item {
+      padding: 2rem 4rem;
     }
     .container__offer.grid {
       display: grid;
