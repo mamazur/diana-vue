@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astrologische Beratung</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        color: #1f2937;
+
+        background:
+          radial-gradient(
+            circle at 15% 20%,
+            rgba(139, 92, 246, 0.18),
+            transparent 45%
+          ),
+          radial-gradient(
+            circle at 85% 25%,
+            rgba(253, 164, 69, 0.16),
+            transparent 45%
+          ),
+          radial-gradient(
+            circle at 50% 80%,
+            rgba(168, 85, 247, 0.1),
+            transparent 50%
+          ),
+          linear-gradient(180deg, #f9fafb 0%, #eef2ff 50%, #f8fafc 100%);
+
+        background-attachment: fixed;
+      }
+
+      .container {
+        max-width: 950px;
+        margin: auto;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 44px;
+        color: #111827;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        font-size: 13px;
+        color: #505c70;
+        margin-bottom: 40px;
+      }
+      .intro {
+        font-size: 17px;
+        width: 75%;
+        margin: auto;
+      }
+
+      /* PROFILE SECTION */
+      .profile {
+        margin-bottom: 40px;
+      }
+
+      .profile img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 4px solid white;
+      }
+
+      .profile p {
+        margin-top: 15px;
+        font-size: 15px;
+        color: #4b5563;
+      }
+
+      .box {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 18px;
+        padding: 35px;
+        margin: 30px 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        backdrop-filter: blur(8px);
+      }
+
+      .box:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+      }
+
+      h2 {
+        font-family: "Playfair Display", serif;
+        color: #1f2937;
+      }
+
+      /* BUTTON STYLE */
+      form {
+        padding: 20px;
+        padding-right: 40px;
+      }
+      button {
+        margin-top: 15px;
+        padding: 12px 24px;
+        background: linear-gradient(135deg, #8b5cf6, #fda445);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+        opacity: 0.95;
+      }
+      .btn-social {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 12px 24px;
+        background: linear-gradient(135deg, #8b5cf6, #fda445);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      .btn-social:hover {
+        transform: scale(1.05);
+        opacity: 0.95;
+      }
+      .btn-social.instagram {
+        background: linear-gradient(135deg, #8b5cf6, #ec4899);
+      }
+
+      .btn-social.telegram {
+        background: linear-gradient(135deg, #3b82f6, #fda445);
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid #e5e7eb;
+        background: #f9fafb;
+      }
+
+      textarea {
+        min-height: 100px;
+      }
+
+      footer {
+        margin-top: 60px;
+        font-size: 13px;
+        color: #787f8e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Astrologische Beratung</h1>
+      <p class="subtitle">
+        Individuelle astrologische Analysen für mehr Klarheit, Orientierung und
+        innere Stärke.
+      </p>
+
+      <!--  PHOTO -->
+      <div class="profile">
+        <img src="./assets/me.jpg" alt="Astrologin" />
+      </div>
+
+      <p class="intro">
+        Finde Klarheit in deinem Leben und entdecke die verborgenen Muster
+        deiner Persönlichkeit. Deine Sterne zeigen dir den Weg – ich helfe dir,
+        ihn zu verstehen.
+      </p>
+      <!-- ÜBER MICH -->
+      <div class="box">
+        <h2>Über mich</h2>
+
+        <div
+          style="display: flex; gap: 25px; align-items: center; flex-wrap: wrap"
+        >
+          <!-- IMAGE -->
+          <div style="flex: 1; min-width: 200px; text-align: center">
+            <img
+              src="./assets/dav.png"
+              alt="DAV Logo"
+              style="
+                width: 160px;
+                opacity: 0.95;
+                filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.12));
+              "
+            />
+          </div>
+
+          <!-- TEXT -->
+          <div style="flex: 2; min-width: 260px; text-align: left">
+            <p>
+              Ich bin Diana und arbeite seit mehreren Jahren intensiv mit
+              astrologischen Analysen, um Menschen in wichtigen Lebensphasen
+              Orientierung und Klarheit zu geben.
+            </p>
+
+            <p>
+              Für mich ist Astrologie kein abstraktes System, sondern ein
+              Werkzeug, um persönliche Entwicklungen besser zu verstehen und
+              bewusste Entscheidungen zu treffen.
+            </p>
+
+            <p>
+              In meiner Arbeit verbinde ich präzise Analyse mit Intuition – mit
+              dem Ziel, dir klare und alltagstaugliche Impulse zu geben.
+            </p>
+
+            <p>
+              Jede Auswertung wird individuell für dich erstellt und persönlich
+              abgestimmt.
+            </p>
+
+            <p>
+              <strong
+                >Ich freue mich, dich auf deinem Weg begleiten zu
+                dürfen.</strong
+              >
+            </p>
+
+            <!-- SOCIAL LINKS -->
+            <div
+              style="
+                margin-top: 20px;
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
+              "
+            >
+              <a
+                href="https://www.instagram.com/dianagalkin_astro/"
+                target="_blank"
+                class="btn-social instagram"
+              >
+                Instagram
+              </a>
+
+              <a
+                href="https://t.me/+cLHWQG8Dn3Y5OTMy"
+                target="_blank"
+                class="btn-social telegram"
+              >
+                Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPTION 1 -->
+      <div class="box">
+        <h2>Kurze Prognose</h2>
+        <p>
+          Eine prägnante astrologische Analyse deiner aktuellen Lebenssituation
+          – klar, verständlich und fokussiert.
+        </p>
+        <button onclick="selectOption('Kurze Prognose')">
+          Jetzt auswählen
+        </button>
+      </div>
+
+      <!-- OPTION 2 -->
+      <div class="box">
+        <h2>Detaillierte Prognose</h2>
+        <p>
+          Eine tiefgehende Auswertung mit umfassenden Einblicken in deine
+          Entwicklung, Beziehungen und Zukunft.
+        </p>
+        <button onclick="selectOption('Detaillierte Prognose')">
+          Jetzt auswählen
+        </button>
+      </div>
+
+      <!-- FORM -->
+      <div class="box">
+        <h2>Deine Bestellung</h2>
+
+        <form action="send.php" method="POST">
+          <input type="text" name="Name" placeholder="Dein Name" required />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Deine E-Mail"
+            required
+          />
+
+          <select name="Produkt" id="produkt" required>
+            <option value="">Bitte auswählen</option>
+            <option>Kurze Prognose</option>
+            <option>Detaillierte Prognose</option>
+          </select>
+
+          <input type="text" name="Geburtsdatum" placeholder="Geburtsdatum" />
+          <input type="text" name="Geburtsort" placeholder="Geburtsort" />
+          <input
+            type="text"
+            name="Geburtszeit"
+            placeholder="Geburtszeit (optional)"
+          />
+
+          <textarea
+            name="Nachricht"
+            placeholder="Deine Frage oder Anliegen"
+          ></textarea>
+
+          <button type="submit">Bestellung absenden</button>
+        </form>
+      </div>
+
+      <footer>© 2026 Diana Galkin - Astrologische Beratung</footer>
+    </div>
+
+    <script>
+      function selectOption(option) {
+        document.getElementById("produkt").value = option;
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>
